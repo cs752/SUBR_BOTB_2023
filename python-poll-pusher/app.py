@@ -23,7 +23,7 @@ conn = create_connection(database)
 c = conn.cursor()
 
 # Image in center of QR Code
-Logo_link = './static/assets/nfl.png'
+Logo_link = './static/assets/nfl256.png'
 logo = Image.open(Logo_link)
 
 # Taking base width
@@ -38,8 +38,8 @@ QRcode = qrcode.QRCode(
 )
 
 # taking url or text
-url = 'https://www.nfl.com/plus/'
- 
+# url = 'https://www.nfl.com/plus/'
+url = 'https://www.figma.com/proto/ltx1jEM82pTnmPqdRwUPKc/BOTB_2023'
 # adding URL or text to QRcode
 QRcode.add_data(url)
  
